@@ -14,7 +14,7 @@ exports.deleteData=async(req,res)=>{
                     message:"user not found",
                     data:null
                 })
-            }
+            }  
             
                 
                 

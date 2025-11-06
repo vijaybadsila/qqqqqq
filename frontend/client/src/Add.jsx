@@ -22,7 +22,7 @@ const AllData = async (e) => {
   };
 
   try {
-    const response = await fetch("http://localhost:3000/api/v1/Add", {
+    const response = await fetch("http://localhost:5000/api/v1/Add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

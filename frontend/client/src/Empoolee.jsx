@@ -7,7 +7,7 @@ export default function Employees() {
         const [data, setData] = useState([]);
  const getdata = async () => {
   try {
-    const response = await fetch("http://localhost:3000/api/v1/");
+    const response = await fetch("http://localhost:5000/api/v1/");
     
     // Convert response to JSON
     const result = await response.json();
@@ -20,11 +20,9 @@ export default function Employees() {
 
 const deleteUser=async (id)=>{
 try{
-const response=await fetch(`http://localhost:3000/api/v1/delete/${id}`,{ method: "DELETE" });
+const response=await fetch(`http://localhost:5000/api/v1/delete/${id}`,{ method: "DELETE" });
 const result = await response.json();
     console.log(result);
-
-   
 }
 catch(err){
   console.error(err);

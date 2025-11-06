@@ -1,5 +1,4 @@
 const userdata = require("../models/userdata")
-
 exports.getdata=async(req,res)=>{
         try{
            const Response=await userdata.find({})
@@ -11,7 +10,6 @@ exports.getdata=async(req,res)=>{
         }catch(err){
 console.error(err);
 console.log(err);
-
    res.status(200).json({
             success:false,
             data:null,
